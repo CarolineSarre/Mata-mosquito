@@ -3,6 +3,19 @@ var largura = 0
 var vidas = 1
 var tempo = 10
 
+var criamosquitotempo = 1500
+
+var nivel = window.location.search
+nivel = nivel.replace('?', '')
+
+if(nivel === 'normal'){
+    criamosquitotempo = 1500
+} else if(nivel === 'dificil'){
+    criamosquitotempo = 1000
+} else if (nivel === 'chuck'){
+    criamosquitotempo = 750
+}
+
 function ajustaTamanhoPalcoJogo(){
     altura = window.innerHeight
     largura = window.innerWidth
