@@ -18,7 +18,7 @@ var cronometro = setInterval(function(){
     if(tempo<0){
         clearInterval(cronometro)
         clearInterval(criamosquito)
-        alert('vitoria')
+        window.location.href = 'vitoria.html'
     } else{
 
     document.getElementById('cronometro').innerHTML = tempo
